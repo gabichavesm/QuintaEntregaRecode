@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script type="text/javascript" 
+            src="//code.jquery.com/jquery-1.9.1.js">
+            </script>
+    <link rel="stylesheet" 
+          type="text/css" 
+          href="/css/result-light.css">
+    <script type="text/javascript" 
+            src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+  </script>
+    <link rel="stylesheet" 
+          type="text/css" 
+          href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" 
+          type="text/css" 
+          href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <style></style>
+        
+    
+    
+        </script>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+            </style>
+        <style type="text/css">
+        p {
+            background-color: #fffffe;
+            
+        } 
+        </style>
+
+    	<title>Destinos - Trip Tour</title>
+
+    </head>
+
+    <body>
+
+      <header>
+        <nav>
+          <div class="header-main d-flex">
+            <div class="header-logo"><a href="./projetoIndividualRecode.html" 
+              title="Trip Tour Agência"><img id="img_redonda" width="105" height="105" 
+              class="d-inline-block align-top" src="./imagens/logo_trip_tour (1).png" 
+              alt="TripTour"></a></div>
+          <ul class="menu">
+            
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./cadastro.html">Cadastro</a></li>
+            <li><a href="./projetoIndividualRecode.html">Home</a></li>
+            <li><a href="./destino.html">Destinos</a></li>
+            <li><a href="./promocoes.html">Promoções</a></li>
+          </ul>
+          <nav class="navbar nav-fill">
+            <div class="container-fluid">
+              <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Pesquisar no site" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+              </form>
+              <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-youtube"></a>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+        </nav>
+    </header>
+
+<!-- Control buttons -->
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')">Todos os destinos</button>
+  <button class="btn" onclick="filterSelection('nacionais')">Nacionais</button>
+  <button class="btn" onclick="filterSelection('internacionais')">Internacionais</button>
+</div>
+
+<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+<div class="container">
+  <div class="filterDiv nacionais">Porto de Galinhas - Pernambuco</div>
+  <div class="filterDiv nacionais">Chapada dos Veadeiros - Goiás</div>
+  <div class="filterDiv nacionais">Gramado - Rio Grande do Sul</div>
+  <div class="filterDiv nacionais">Rio de Janeiro - Rio de Janeiro</div>
+
+  
+  <div class="filterDiv internacionais">Bariloche - Argentina</div>
+  <div class="filterDiv internacionais">Ottawa - Canadá</div>
+  <div class="filterDiv internacionais">Madrid - Espanha</div>
+  <div class="filterDiv internacionais">Los Angeles - Estados Unidos</div>
+</div>
+    
+<script>
+      filterSelection("all")
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
+      
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+        }
+      }
+      
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);     
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+      
+      // Add active class to the current button (highlight it)
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function(){
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+      </script>
+      
+    <center><font face= ="Poppins" size=2>&copy; Recode Pro</font></center>
+  </body>
+</html>

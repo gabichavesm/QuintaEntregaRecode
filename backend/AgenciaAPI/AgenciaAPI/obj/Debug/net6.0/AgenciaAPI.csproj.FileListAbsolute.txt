@@ -1,0 +1,7 @@
+C:\Users\gabic\source\repos\AgenciaAPI\AgenciaAPI\obj\Debug\net6.0\AgenciaAPI.csproj.AssemblyReference.cache
+C:\Users\gabic\source\repos\AgenciaAPI\AgenciaAPI\obj\Debug\net6.0\AgenciaAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabic\source\repos\AgenciaAPI\AgenciaAPI\obj\Debug\net6.0\AgenciaAPI.AssemblyInfoInputs.cache
+C:\Users\gabic\source\repos\AgenciaAPI\AgenciaAPI\obj\Debug\net6.0\AgenciaAPI.AssemblyInfo.cs
+C:\Users\gabic\source\repos\AgenciaAPI\AgenciaAPI\obj\Debug\net6.0\AgenciaAPI.csproj.CoreCompileInputs.cache
+C:\Users\gabic\source\repos\AgenciaAPI\AgenciaAPI\obj\Debug\net6.0\AgenciaAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\gabic\source\repos\AgenciaAPI\AgenciaAPI\obj\Debug\net6.0\AgenciaAPI.MvcApplicationPartsAssemblyInfo.cache
